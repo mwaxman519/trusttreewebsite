@@ -1,0 +1,444 @@
+/* 
+ Theme Name:     Atlas
+ Author:         Mark Hendriksen
+ Author URI:     https://markhendriksen.com
+ Template:       Divi
+ Version:        1.0
+ Description:    A Divi Child Theme 
+*/ 
+
+/* ----------- PUT YOUR CUSTOM CSS BELOW THIS LINE -- DO NOT EDIT ABOVE THIS LINE --------------------------- */ 
+
+/* ########################### */
+/* ###### CHANGE COLORS ###### */
+/* ########################### */
+
+/* ### Dropdown menu ### */
+.nav li li a { 
+  	border-bottom: 1px solid rgb(255 255 255 / 19%); /* Dropdown border bottom */ 
+  	font-weight: 500 !important; /* Dropdown font weight */ 
+  	font-size: 16px !important; /* Dropdown font size */ 
+}
+  
+.et-menu > .menu-item-has-children > .sub-menu:before {
+  	border-bottom: 12px #00eab7 solid; /* Dropdown arrow color */
+} 
+
+/* #### Collaping mobile menu #### */
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon::after,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon::after {
+	color: #0a070a; /* Icon color */
+	background: #00eab7; /* Icon background color */
+}
+
+/* #### Full-screen overlay menu #### */
+.hamburger-icon-v1::after {
+  background: #00eab7; /* Hamburger background color */
+}
+  
+.hamburger-icon-v1:hover::before {
+	color: #000; /* Hamburger icon hover color */
+}
+  
+.custom-menu-v1 ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon::after, .et-db #et-boc .et-l .custom-menu-v1 ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon::after {
+    background-color: #00eab7; /* background icon color */
+    color: #000; /* Icon color */
+}
+
+/* ### Projects - home page ### */
+.section-with-white-bg .text-white-projects h2,
+.section-with-white-bg .text-white-projects .et_pb_promo_description p {
+	color: #ffffff !important; /* text color when scrolled down */
+}
+
+.et_pb_section.section-with-white-bg.section-with-color-bg {
+	background-color: #0a070a!important; /* background color when scrolled down */
+}
+
+/* ### Blog grid ### */
+.atlas-blog .et_pb_post .post-meta {
+	background-color: #f6f4ef; /* meta background color */
+}
+
+
+/* ########################### */
+/* ####### END COLORS ######## */
+/* ########################### */
+
+/* ### General ### */
+#page-container {
+	overflow-x: hidden;
+}
+
+/* ### Header V1 ### */
+@media screen and (min-width: 981px) {
+.header-v1-column {
+	display: flex;
+	align-items: center;
+}
+
+.header-v1-menu {
+	flex: 2 1 auto;
+}
+
+.header-v1-menu.et_pb_menu .et-menu>li {
+    padding-left: 17px;
+    padding-right: 17px;
+}}
+
+@media screen and (max-width: 980px) {
+.header-button-1,
+.header-button-2 {
+	width: 100%;
+    text-align: center;	
+}}
+
+/* ### Overlay menu ### */
+
+/* Icons */  
+.custom-menu-v1 ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon::after, .et-db #et-boc .et-l .custom-menu-v1 ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon::after {
+		content: '\4c';
+}
+   
+.hamburger-icon-v1::before {
+	content: '\61';
+}
+  
+.mh-cm-v2 .et_mobile_menu .menu-item-has-children > a:after {
+  content: '\4c';
+}
+
+.mh-cm-v2 .et_mobile_menu .menu-item-has-children > .mh-cm-v2-menu-switched-icon:after {
+	content: '\4d';
+}
+  
+@media screen and (min-width: 981px) {
+.mh-cm-v2 .et-menu > .menu-item-has-children > .sub-menu:before {
+  content: '\42';
+}
+  
+.mh-cm-v2 .et-menu .sub-menu .menu-item-has-children>a:first-child:after {
+  content: "\35";
+}}
+  
+.custom-menu-v1 ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon::after, .et-db #et-boc .et-l .custom-menu-v1 ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon::after {
+		content: '\4c';
+}  
+ 
+.custom-menu-v1 ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon.mh-cm-v2-menu-switched-icon::after, .et-db #et-boc .et-l .custom-menu-v1 ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon.mh-cm-v2-menu-switched-icon::after  
+ {
+ 		content: '\4d' !important;   
+}
+
+/* ### top bar menu ### */
+.top-bar-menu-row {
+	display: flex;
+    align-items: center;	
+}
+
+.social-media-top-bar.et_pb_social_media_follow li {
+    margin-bottom: 0px;
+}
+
+/* ### Team members social ### */
+.custom-social.et_pb_social_media_follow li a {
+    margin-right: 0px;
+}
+
+/* ### Appointment CTA ### */
+@media screen and (min-width: 981px) {
+.appointment-cta-row {
+	display: flex;
+    align-items: center;
+}}
+
+/* ### Project box ### */
+.service-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 600px;
+}
+
+@media screen and (min-width: 981px) {
+.service-box .service-animated-text {
+	max-height: 0em;
+	opacity: 0;
+	transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .25s;
+}
+
+.service-box:hover .service-animated-text {
+	max-height: 6em;
+	opacity:1;
+}}
+
+/* ### Projects section ### */
+.section-with-white-bg {
+	transition: background-color .6s ease-in-out,color .6s ease-in-out;	
+}
+
+.text-black-projects h2,
+.text-black-projects .et_pb_promo_description p {
+	-webkit-transition: color .6s; 
+	transition: color .6s; 
+}
+
+/* ### Blurb services ### */
+.blurb-service li::marker {
+	font-size: 16px;
+	font-family: FontAwesome!important; 
+	font-weight: 900;
+	content: "\f105";
+}
+
+.blurb-single-link.et_pb_blurb_position_left .et_pb_blurb_container {
+	padding-left: 0px !important;
+}
+
+.blurb-single-link .et_pb_image_wrap {
+	display: flex;
+    justify-content: flex-end;
+	margin-right: 5px;
+}
+
+/* ### Home images sections ### */
+.home-images-column-1.et_pb_column_1_3 {
+	width: 35.6667%;
+}
+
+.home-images-column-2.et_pb_column_2_3 {
+	width: 58.833%;
+}
+
+/* ### Home logo row ### */
+.logo-row {
+	display: flex;
+    align-items: center;	
+}
+
+/* ### Blog ### */
+.atlas-blog .et_pb_post {
+	padding: 0px !important;
+}
+
+.atlas-blog .et_pb_post .et_pb_image_container {
+    margin: 0px 0px 29px !important;
+}
+
+.atlas-blog .et_pb_post .post-meta {
+    padding: 2px 10px;
+    border-radius: 4px;
+}
+
+.atlas-blog .et_pb_post .more-link {
+	margin-top: 15px;
+    display: block;
+}
+
+/* ### Career ### */
+.career-toggle h4 {
+	font-weight: 700;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+/* ### Responsive styles ### */
+
+/* ### From column to row tablet ### */
+@media screen and (min-width: 768px) and (max-width: 980px){
+.from-column-to-row-tablet {
+	display: flex;
+    flex-direction: row;
+}}
+
+/* ### Swap column tablet and mobile ### */
+@media screen and (max-width: 980px) {
+.project-section-home .et_pb_row,
+.swap-column-mobile-tablet {
+	display: flex;
+    flex-direction: column-reverse;
+}
+
+.service-box {
+	height: 100%;		
+}}
+
+/* ### 981 to 1400 ### */
+@media screen and (min-width: 981px) and (max-width: 1400px){
+.custom-row-95.et_pb_row {
+    width: 95% !important; 	
+}
+	
+.hero-title-h1 h1 {
+	font-size: 80px !important;	
+}
+
+.h2-big h2	{
+	font-size: 36px !important;	
+}
+
+.project-big-text p	{
+	font-size: 44px !important;	
+	line-height: 1.2em;
+}
+
+.et_pb_text.about-points-text  {
+	font-size: 64px !important;	
+}
+
+.et_pb_text.about-points-text-2  {
+	font-size: 28px !important;	
+}}
+
+
+/* ### 981 to 1500 ### */
+@media screen and (min-width: 981px) and (max-width: 1500px){
+.cta-middle {
+	display: flex;
+}
+	
+.cta-middle .cta-middle-column-image {
+	align-self: flex-end;	
+}
+
+.review-middle {
+	display: flex;	
+}
+
+.review-middle .review-middle-column-image {
+	align-self: flex-end;			
+}}
+
+/* ### Above footer CTA ### */
+@media screen and (min-width: 981px) {
+.above-footer-cta-row {
+	display: flex;	
+}
+
+.above-footer-cta-button-column {
+	display: flex;
+    align-items: center;
+	justify-content: flex-end;
+}}
+
+/* #### Dropdown Menu #### */
+  
+.nav li ul.sub-menu {
+	padding: 0px !important;
+  	border-radius: 5px;
+  	box-shadow: 0 5px 17px 0px rgb(0 0 0 / 25%);
+  	-moz-box-shadow: 0 5px 17px 0px rgba(0,0,0,.25);
+  	-webkit-box-shadow: 0 5px 17px 0px rgb(0 0 0 / 25%);
+}
+  
+.nav li li {
+  	padding: 0 0px !important;
+  	width: 100%;
+}
+  
+.et-menu li li a {
+  	padding: 10px 20px;
+  	width: 100% !important;
+}
+  
+.et-menu > .menu-item-has-children > .sub-menu:before {
+	content: '';
+  	display: block;
+  	position: absolute;
+  	left: 20px;
+  	top: -20px;
+  	width: 0;
+  	height: 0;
+  	border-top: 8px solid transparent;
+  	border-right: 12px solid transparent;
+  	border-left: 12px solid transparent;
+  	z-index: 1;
+}
+  
+.nav li ul {
+    right: 0!important;
+}
+  
+.et_pb_menu--without-logo .et_pb_menu__menu>nav>ul>li>a {
+    padding-bottom: 20px;
+}
+
+.nav li li ul {
+    top: -3px !important;
+}
+
+/* #### Collaping Mobile Menu #### */
+
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon::after,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon::after {
+	top: 10px;
+	position: relative;
+	font-family: "ETModules";
+	content: '\33';
+	border-radius: 50%;
+	padding: 3px;
+}
+
+ul.et_mobile_menu li.menu-item-has-children.mobile-toggle-open>.mobile-toggle-icon::after,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children.mobile-toggle-open>.mobile-toggle-icon::after {
+	content: '\32';
+}
+
+.et_mobile_menu .menu-item-has-children>a {
+    font-weight: 600 !important; 
+}
+
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon,
+ul.et_mobile_menu li.page_item_has_children .mobile-toggle-icon,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon,
+.et-db #et-boc .et-l ul.et_mobile_menu li.page_item_has_children .mobile-toggle-icon {
+	width: 44px;
+	height: 100%;
+	padding: 0px !important;
+	max-height: 44px;
+	border: none;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 999;
+	background-color: transparent;
+}
+
+ul.et_mobile_menu>li.menu-item-has-children,
+ul.et_mobile_menu>li.page_item_has_children,
+ul.et_mobile_menu>li.menu-item-has-children .sub-menu li.menu-item-has-children,
+.et-db #et-boc .et-l ul.et_mobile_menu>li.menu-item-has-children,
+.et-db #et-boc .et-l ul.et_mobile_menu>li.page_item_has_children,
+.et-db #et-boc .et-l ul.et_mobile_menu>li.menu-item-has-children .sub-menu li.menu-item-has-children {
+	position: relative;
+}
+
+.et_mobile_menu .menu-item-has-children>a,
+.et-db #et-boc .et-l .et_mobile_menu .menu-item-has-children>a {
+	background-color: transparent;
+}
+
+ul.et_mobile_menu .menu-item-has-children .sub-menu,
+#main-header ul.et_mobile_menu .menu-item-has-children .sub-menu,
+.et-db #et-boc .et-l ul.et_mobile_menu .menu-item-has-children .sub-menu,
+.et-db #main-header ul.et_mobile_menu .menu-item-has-children .sub-menu {
+	display: none !important;
+	visibility: hidden !important;
+}
+
+ul.et_mobile_menu .menu-item-has-children .sub-menu.visible,
+#main-header ul.et_mobile_menu .menu-item-has-children .sub-menu.visible,
+.et-db #et-boc .et-l ul.et_mobile_menu .menu-item-has-children .sub-menu.visible,
+.et-db #main-header ul.et_mobile_menu .menu-item-has-children .sub-menu.visible {
+	display: block !important;
+	visibility: visible !important;
+}
+
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon {
+	text-align: center;
+	opacity: 1;
+}
+
