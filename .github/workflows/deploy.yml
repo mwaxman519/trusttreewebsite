@@ -21,6 +21,10 @@ jobs:
     - name: Build website
       run: |
         npm install -g npm@latest
+        
+        - name: npm init
+        run: npm init -y
+        
         npm run build
         
     - name: Deploy to Azure
