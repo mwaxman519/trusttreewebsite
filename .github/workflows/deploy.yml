@@ -20,7 +20,7 @@ jobs:
       
     - name: Build website
       run: |
-        npm install webpack
+        npm install -D webpack-cli
         npm run build
         
     - name: Deploy to Azure
