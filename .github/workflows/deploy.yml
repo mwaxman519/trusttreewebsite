@@ -14,13 +14,13 @@ jobs:
     - uses: actions/checkout@v2
       
     - name: Install Node.js
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
         node-version: 12.x
       
     - name: Build website
       run: |
-        npm install -D webpack
+        npm install -D webpack-cli
         npm run build
         
     - name: Deploy to Azure
