@@ -20,7 +20,7 @@ jobs:
       
     - name: Build website
       run: |
-        npm install
+        npm install --save-dev nativescript-dev-webpack
         npm run build
         
     - name: Deploy to Azure
