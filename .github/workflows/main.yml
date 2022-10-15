@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: bacongobbler/azure-blob-storage-upload@main
         with:
-          source_dir: /
+          source_dir: build
           container_name: www
           connection_string: ${{ secrets.BLOB_STORAGE_CONNECTION_STRING }}
           extra_args: '--pattern *.tar.gz'
