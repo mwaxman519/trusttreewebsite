@@ -2,7 +2,7 @@ name: Build and deploy TrustTree site to Azure Blob Storage
 on:
   push:
     branches:
-      - master #trigger the workflow on push request event for the master branch
+      - main #trigger the workflow on push request event for the master branch
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build-and-deploy:
